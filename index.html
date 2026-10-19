@@ -22,9 +22,9 @@
   .others{margin-top:18px;display:flex;flex-wrap:wrap;gap:10px}
   .others a{color:#fff;border:1px solid rgba(255,255,255,.25);padding:8px 14px;border-radius:10px;text-decoration:none;font-size:14px;font-weight:600} .others a:hover{background:rgba(255,255,255,.08)}
   .card3d{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:20px;padding:26px;backdrop-filter:blur(6px)}
-  .nova{display:flex;gap:14px;align-items:center;margin-bottom:14px} .nova img{width:52px;height:52px;animation:float 5s ease-in-out infinite}
+  .whatsnew{display:flex;gap:14px;align-items:center;margin-bottom:14px} .whatsnew img{width:52px;height:52px;animation:float 5s ease-in-out infinite}
   @keyframes float{50%{transform:translateY(-6px)}}
-  .nova b{font-size:18px} .nova p{margin:0;color:#cfdce6;font-size:14px}
+  .whatsnew b{font-size:18px} .whatsnew p{margin:0;color:#cfdce6;font-size:14px}
   .card3d ul{margin:0;padding-left:18px;color:#e6eef4;font-size:15px} .card3d li{margin:6px 0}
   main{padding:0 24px} .panel{background:#fff;border:1px solid var(--line);border-radius:18px;padding:28px;margin-top:-40px;box-shadow:0 20px 50px rgba(13,38,58,.08)}
   h2{font-size:24px;margin:0 0 6px} .muted{color:var(--muted)}
@@ -47,8 +47,8 @@
     <div class="brand"><img src="logo.svg" alt="Accela"><span>Chat</span></div>
     <div class="hero">
       <div>
-        <h1>Your AI sales cockpit, <em>with Nova built in.</em></h1>
-        <p class="lead">Accela Chat runs Claude on your computer with your skills, your tools and a personal assistant that knows your whole book. Download it like any other app.</p>
+        <h1>Your AI sales cockpit, <em>on your computer.</em></h1>
+        <p class="lead">Accela Chat runs Claude on your computer with your skills, your tools and a cockpit that shows what to do first. Download it like any other app.</p>
         <a id="cta" class="cta" href="https://github.com/nicoaccela/accela-chat-downloads/releases/latest">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0l-5-5m5 5l5-5M4 21h16"/></svg>
           <span id="ctaText">Download Accela Chat</span>
@@ -57,11 +57,11 @@
         <div class="others" id="others"></div>
       </div>
       <div class="card3d">
-        <div class="nova"><img src="nova.svg" alt=""><div><b>Meet Nova</b><p>Your personal assistant, right under Home.</p></div></div>
+        <div class="whatsnew"><div><b>What's new in 0.9.2</b><p>Pipeline hygiene on Analysis.</p></div></div>
         <ul>
-          <li>Knows your chats, tasks and morning brief</li>
-          <li>Answers for you, with sources</li>
-          <li>Hands out work to your other chats, with your OK</li>
+          <li>Hygiene alerts: close dates to move, quiet deals, missing next steps</li>
+          <li>Open ARR by product category</li>
+          <li>Lighter Refresh: Salesforce only, on Claude Haiku 5.5</li>
         </ul>
       </div>
     </div>
@@ -91,12 +91,14 @@
       <div class="note">Why the security prompt? The app isn't code-signed yet, so your computer asks once before opening it. It's safe to continue.</div>
     </section>
     <section class="features">
-      <div class="f"><b>Home</b>A morning brief of your mail, calendar, tasks, pipeline and Gong calls.</div>
+      <div class="f"><b>Home</b>A launchpad with live status for your Cockpit, Analysis and connections.</div>
+      <div class="f"><b>Cockpit</b>A summary strip, what to do first, mail threads, meetings, tasks and watch-outs.</div>
+      <div class="f"><b>Analysis</b>Pipeline snapshot, book of business and signals from your own Salesforce and Pursuit.</div>
       <div class="f"><b>One-click connections</b>Outlook, Salesforce, Gong, Pursuit and more. Click, sign in, done.</div>
       <div class="f"><b>Projects</b>A workspace per account with instructions, knowledge and notes.</div>
       <div class="f"><b>Voice</b>Talk to it hands-free, with a natural voice option.</div>
       <div class="f"><b>Live activity</b>Watch Claude work and redirect it mid-reply.</div>
-      <div class="f"><b>Latest models</b>Claude Opus 5.5 and Sonnet 5.5.</div>
+      <div class="f"><b>Latest models</b>Claude Opus 5.5, Sonnet 5.5 and Haiku 5.5.</div>
     </section>
   </div>
 </main>
